@@ -1,0 +1,9 @@
+#Batch layer
+Oracle/MySQL--->Sqoop--->HDFS--->MapReduce--->Hbase
+
+#Serving layer
+Hbase--->                            <---Query
+        ---->Join--->ElasticSearch---
+Hbase--->                            --->Visualization
+#Speed layer
+Oracle/MySQL--->Redis--->Storm--->Hbase
